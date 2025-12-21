@@ -5,7 +5,7 @@ output: html_document
 
 # Start fresh
 
-code for starting fresh?
+
 ```{r}
 rm(list = ls()) #this is cleaning the memory
 ```
@@ -14,6 +14,21 @@ rm(list = ls()) #this is cleaning the memory
 # get the data
 
 code for opening a file from a url (file in Excel), name it 'fragility23'?
+
+```{r}
+# opening a file from a url (file in Excel), name it 'fragility23'
+linkGit="https://github.com/DACSS-Fundamentals/overview/raw/refs/heads/main/FSI-2023-DOWNLOAD.xlsx"
+
+```
+
+```{r}
+#install.packages('rio')
+library(rio) # package needed
+fragility23=rio::import(file = linkGit) #object that will hold the result
+
+```
+
+
 
 # exploratory commands
 

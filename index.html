@@ -356,13 +356,17 @@ display: none;
 
 <div id="start-fresh" class="section level1">
 <h1>Start fresh</h1>
-<p>code for starting fresh?</p>
 <pre class="r"><code>rm(list = ls()) #this is cleaning the memory</code></pre>
 </div>
 <div id="get-the-data" class="section level1">
 <h1>get the data</h1>
 <p>code for opening a file from a url (file in Excel), name it
 ‘fragility23’?</p>
+<pre class="r"><code># opening a file from a url (file in Excel), name it &#39;fragility23&#39;
+linkGit=&quot;https://github.com/DACSS-Fundamentals/overview/raw/refs/heads/main/FSI-2023-DOWNLOAD.xlsx&quot;</code></pre>
+<pre class="r"><code>#install.packages(&#39;rio&#39;)
+library(rio) # package needed
+fragility23=rio::import(file = linkGit) #object that will hold the result</code></pre>
 </div>
 <div id="exploratory-commands" class="section level1">
 <h1>exploratory commands</h1>
